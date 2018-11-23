@@ -7,18 +7,18 @@ var COAT_COLORS = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161
 var EYES_COLORS = ['black', 'red', 'blue', 'yellow', 'green'];
 
 var setRandomFullName = function () {
-  var fullName = WIZARD_NAMES[Math.floor(Math.random() * WIZARD_NAMES.length)] +' '+ WIZARD_LASTNAMES[Math.floor(Math.random() * WIZARD_LASTNAMES.length)]
-  return fullName
+  var fullName = WIZARD_NAMES[Math.floor(Math.random() * WIZARD_NAMES.length)] + ' ' + WIZARD_LASTNAMES[Math.floor(Math.random() * WIZARD_LASTNAMES.length)];
+  return fullName;
 };
 
 var setRandomCoatColor = function () {
-  var coatColor = COAT_COLORS[Math.floor(Math.random() * COAT_COLORS.length)]
-  return coatColor
+  var coatColor = COAT_COLORS[Math.floor(Math.random() * COAT_COLORS.length)];
+  return coatColor;
 };
 
 var setRandomEyesColor = function () {
-  var eyesColor = EYES_COLORS[Math.floor(Math.random() * EYES_COLORS.length)]
-  return eyesColor
+  var eyesColor = EYES_COLORS[Math.floor(Math.random() * EYES_COLORS.length)];
+  return eyesColor;
 };
 
 var userDialog = document.querySelector('.setup');
@@ -61,7 +61,7 @@ var renderWizard = function (wizard) {
   wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColor;
 
   return wizardElement;
-}
+};
 
 var fragment = document.createDocumentFragment();
 for (var i = 0; i < wizards.length; i++) {
