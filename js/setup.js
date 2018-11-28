@@ -28,13 +28,6 @@ var similarWizardTemplate = document.querySelector('#similar-wizard-template')
   .content
   .querySelector('.setup-similar-item');
 
-// var generateWizard = function ()
-// {
-//   name: setRandomFullName(),
-//     coatColor: setRandomCoatColor(),
-//   eyesColor: setRandomEyesColor()
-// };
-
 var generateWizard = function () {
   return {
     name: setRandomFullName(),
